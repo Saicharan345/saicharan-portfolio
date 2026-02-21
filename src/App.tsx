@@ -86,7 +86,11 @@ function App() {
             <div className="absolute w-80 h-80 bg-blue-500 blur-3xl opacity-20 rounded-full animate-pulse"></div>
 
             <div className="relative w-72 h-72 rounded-full border-4 border-blue-500 shadow-2xl shadow-blue-500/30 overflow-hidden hover:scale-105 transition">
-              <img src="/profile.jpg" alt="Saicharan" className="w-full h-full object-cover object-top" />
+              <img
+  src={`${import.meta.env.BASE_URL}profile.jpg`}
+  alt="Saicharan"
+  className="w-full h-full object-cover object-top"
+/>
             </div>
           </motion.div>
 
